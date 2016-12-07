@@ -509,3 +509,11 @@ Taken from Material Kit CSS Demo - Should debug this later
     background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%); */
 }
 
+/* widen the subtitle for the website */
+.index-page .brand h3 {
+	max-width: 850px;
+	font-weight: normal;
+	font-size: 1.7em;
+}
+/*increase font size for brand name */
+.index-page .brand h1 { font-size: 5.2em; }
