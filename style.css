@@ -508,3 +508,8 @@ Taken from Material Kit CSS Demo - Should debug this later
     background: -moz-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
     background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%); */
 }
+
+/*remove padding from main page, fixes the width for the cards */
+.container {
+    padding: 0px;
+}
