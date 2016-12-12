@@ -51,29 +51,34 @@ not required for template or sticky footer method ***************************/
 
 /**************************************** BB Footer Style Start ***************************/
 
-.navbar-foxed-bottom {
-	position
+.navbar-fixed-bottom {
+	padding: 25px 0px 25px 0px; /* padding for the footer */
 }
 
 ul#footerNavByBen {
 	vertical-align: middle;
 }
 
-ul#BBFooter li{
-	padding: 15px;
+ul#BBFooter li {
+	padding: 0px 12px 0px 12px;
 }
 li.footerContactTitle {
 }
 li p#footerContactTitleP {
 	font-weight: bold;
 	color: #263545;
+	padding: 0px; /*fix spacing for footer text */
+	margin: 0px;
 }
 li p#footerContactTextP {
 	font-weight: normal;
 	color: #263545;
+	padding: 0px;
+	margin: 0px;
 }
 li.footerContactLinks a {
 	color: #C4273C;
+	padding: 0px;
 }
 #BBHeaderNav, #BBFooterNav {
 	background-color: #D7DADB;
