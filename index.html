@@ -468,23 +468,25 @@
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START Fixed Footer  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer class="footer navbar-fixed-bottom" id="BBFooterNav">
-  <div class="container">
+  <div class="container" itemscope itemtype="http://schema.org/Person">
     <!--<div id="navbar" class="collapse navbar-collapse col-sm-12">-->
     <div id="navbar" class="hidden-sm hidden-xs">
       <ul class="nav navbar-nav navbar-left" id="BBFooter">
-        <li class="footerContactTitle"><p id="footerContactTitleP">Benjamin A. Brown</p></li>
-        <li class="footerContactTitle"><p id="footerContactTextP">71 Simpson Ave., Somerville, MA 02144</p></li>
+        <li class="footerContactTitle"><p id="footerContactTitleP" itemprop="name">Benjamin A. Brown</p></li>
+        <li class="footerContactTitle"><p id="footerContactTextP" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">71 Simpson Ave.</span>, <span itemprop="addressLocality">Somerville</span>, <span itemprop="addressRegion">MA</span>, <span itemprop="postalCode">02144</span>
+        </p></li>
       </ul>
       <ul class="nav navbar-nav navbar-right" id="BBFooter">
-        <li class="footerContactLinks"><p id="footerContactTextP"><a href="#contact">LinkedIn</a></p></li>
+        <li class="footerContactLinks"><p id="footerContactTextP"><a href="https://www.linkedin.com/in/benjaminallenbrown" target="_blank">LinkedIn</a></p></li>
         <li class="footerContactLinks"><p id="footerContactTextP">
-          <a href="#" >
+          <a href="tel:1-518-683-1602"  itemprop="telephone" >
             <span class="glyphicon glyphicon-earphone"></span> 518-683-1602
           </a>
         </p></li>
         <li class="footerContactLinks">
             <p id="footerContactTextP">
-                <a href="mailto:benjamin.allen.brown@gmail.com" target="_blank">
+                <a href="mailto:benjamin.allen.brown@gmail.com" target="_blank" itemprop="email">
                     <span class="glyphicon glyphicon-envelope"></span> benjamin.allen.brown@gmail.com
                 </a>
             </p>
@@ -493,15 +495,15 @@
     </div>
     <div id="navbar" class="hidden-lg hidden-md col-sm-12 col-xs-12">
       <ul class="nav navbar-nav navbar-left" id="BBFooter">
-        <li class="footerContactLinks"><p id="footerContactTextP"><a href="#contact">LinkedIn</a></p></li>
+        <li class="footerContactLinks"><p id="footerContactTextP"><a href="https://www.linkedin.com/in/benjaminallenbrown" target="_blank">LinkedIn</a></p></li>
         <li class="footerContactLinks"><p id="footerContactTextP">
-          <a href="#" >
+          <a href="tel:1-518-683-1602"  itemprop="telephone" >
             <span class="glyphicon glyphicon-earphone"></span> 518-683-1602
           </a>
         </p></li>
         <li class="footerContactLinks">
             <p id="footerContactTextP">
-                <a href="mailto:benjamin.allen.brown@gmail.com" target="_blank">
+                <a href="mailto:benjamin.allen.brown@gmail.com" target="_blank" itemprop="email">
                     <span class="glyphicon glyphicon-envelope"></span> benjamin.allen.brown@gmail.com
                 </a>
             </p>
