@@ -526,3 +526,6 @@ Taken from Material Kit CSS Demo - Should debug this later
 }
 /*increase font size for brand name */
 .index-page .brand h1 { font-size: 5.2em; }
+
+/*Project Section Tweak */
+.project-box { background-color: #f6f6f6; }
