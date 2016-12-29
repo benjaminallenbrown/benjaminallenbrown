@@ -152,6 +152,10 @@ Taken from Material Kit CSS Demo - Should debug this later
     height: 110px;
     display: block;
 }
+.space-30{
+    height: 30px;
+    display: block;
+}
 .space-50{
     height: 50px;
     display: block;
