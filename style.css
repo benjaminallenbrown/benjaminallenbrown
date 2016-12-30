@@ -529,3 +529,23 @@ Taken from Material Kit CSS Demo - Should debug this later
 
 /*Project Section Tweak */
 .project-box { background-color: #f6f6f6; }
+
+/*increase size of paragraph font in skill section */
+.info p {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+.info p.sub {
+	font-size: 1.0em;
+	line-height: 1.3em;
+}
+.sub-lead {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	color: #666666;
+}
+.sub-lead-bullets {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	color: #666666;
+}
