@@ -143,3 +143,58 @@ function debounce(func, wait, immediate) {
 		if (immediate && !timeout) func.apply(context, args);
 	};
 };
+
+/*(function ($) {
+  $(document).ready(function(){
+
+    // hide .navbar first
+    $(".scrolldisplay").hide();
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+                 // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 240) {
+                $('.scrolldisplay').fadeIn();
+                $('.scrollhide').hide();
+            } else if ($(this).scrollTop() > 220) {
+                $('.scrolldisplay').fadeOut();
+                $('.scrollhide').hide();
+            } else if ($(this).scrollTop() > 200) {
+                $('.scrollhide').fadeOut();
+                $('.scrolldisplay').hide();
+            } else {
+                $('.scrollhide').fadeIn();
+                $('.scrolldisplay').hide();
+            }
+        });
+    });
+
+});
+  }(jQuery));*/
+
+(function ($) {
+  $(document).ready(function(){
+
+    // hide .navbar first
+    $(".scrolldisplay").addClass('hidden-md hidden-lg hidden-xl');
+
+    // fade in .navbar
+    $(function () {
+        $(window).scroll(function () {
+
+            // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 240) {
+                $('.scrolldisplay').removeClass('hidden-md hidden-lg hidden-xl');
+                $(".scrollhide").addClass('hidden');
+            } else {
+                $(".scrolldisplay").addClass('hidden-md hidden-lg hidden-xl');
+                $('.scrollhide').removeClass('hidden');
+            }
+        });
+    });
+
+});
+  }(jQuery));
+  
