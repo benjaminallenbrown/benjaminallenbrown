@@ -80,9 +80,12 @@ li p#footerContactTextP {
 	padding: 10px;
 	margin: 0px;
 }
+li.footerContactLinks {
+	display: inline-block;
+}
 li.footerContactLinks a {
 	color: #FFFFFF;
-	padding: 10px 15px;
+	padding: 10px 15px 10px 15px;
     font-weight: 400;
     font-size: 12px;
     text-transform: uppercase;
@@ -91,10 +94,13 @@ li.footerContactLinks a {
 li.footerContactLinks a:hover, li.footerContactLinks a:focus, li.footerContactLinks a:active {
 	background-color: rgba(130, 177, 255, .3)
 }
-#BBHeaderNav, #BBFooterNav {
+#BBHeaderNav {
 	background-color: rgba(79, 117, 192, 1);/*#D7DADB*/
 }
-
+#BBFooterNav {
+	margin: 0px;
+	background-color: rgba(79, 117, 192, 1);
+}
 #BBHeaderNav a {
 	color: #C4273C;
 }
