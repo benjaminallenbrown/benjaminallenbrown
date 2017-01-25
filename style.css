@@ -531,6 +531,9 @@ Taken from Material Kit CSS Demo - Should debug this later
 .project-box { background-color: #f6f6f6; }
 
 /*increase size of paragraph font in skill section */
+.info {
+	padding: 0px;
+	}
 .info p {
 	font-size: 1.2em;
 	line-height: 1.4em;
