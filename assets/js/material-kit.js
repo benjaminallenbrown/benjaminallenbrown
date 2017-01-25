@@ -144,35 +144,6 @@ function debounce(func, wait, immediate) {
 	};
 };
 
-/*(function ($) {
-  $(document).ready(function(){
-
-    // hide .navbar first
-    $(".scrolldisplay").hide();
-
-    // fade in .navbar
-    $(function () {
-        $(window).scroll(function () {
-
-                 // set distance user needs to scroll before we start fadeIn
-            if ($(this).scrollTop() > 240) {
-                $('.scrolldisplay').fadeIn();
-                $('.scrollhide').hide();
-            } else if ($(this).scrollTop() > 220) {
-                $('.scrolldisplay').fadeOut();
-                $('.scrollhide').hide();
-            } else if ($(this).scrollTop() > 200) {
-                $('.scrollhide').fadeOut();
-                $('.scrolldisplay').hide();
-            } else {
-                $('.scrollhide').fadeIn();
-                $('.scrolldisplay').hide();
-            }
-        });
-    });
-
-});
-  }(jQuery));*/
 
 (function ($) {
   $(document).ready(function(){

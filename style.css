@@ -524,31 +524,117 @@ Taken from Material Kit CSS Demo - Should debug this later
     background: -webkit-linear-gradient(135deg, rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%); */
 }
 
-/* Color Change to Blue */
+/* Color Change to Blue 
+Dark rgba(36, 66, 115, 1);
+Normal rgba(79, 117, 192, 1);
+Light rgba(130, 177, 255, 1);
+*/
 .navbar {
 	background: rgba(79, 117, 192, 1);
+	padding: 5px 0px;
 }
-.btn.btn-primary, .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary.active, .btn.btn-primary:active:focus, .btn.btn-primary:active:hover, .btn.btn-primary.active:focus, .btn.btn-primary.active:hover, .open > .btn.btn-primary.dropdown-toggle, .open > .btn.btn-primary.dropdown-toggle:focus, .open > .btn.btn-primary.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-primary, .navbar .navbar-nav > li > a.btn.btn-primary:hover, .navbar .navbar-nav > li > a.btn.btn-primary:focus, .navbar .navbar-nav > li > a.btn.btn-primary:active, .navbar .navbar-nav > li > a.btn.btn-primary.active, .navbar .navbar-nav > li > a.btn.btn-primary:active:focus, .navbar .navbar-nav > li > a.btn.btn-primary:active:hover, .navbar .navbar-nav > li > a.btn.btn-primary.active:focus, .navbar .navbar-nav > li > a.btn.btn-primary.active:hover, .open >
-.navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle, .open >
-.navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:focus, .open >
-.navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:hover {
+.landing-page .navbar-transparent, .profile-page .navbar-transparent, .signup-page .navbar-transparent, .index-page .navbar-transparent {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.btn.btn-primary, .open > .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle, .open > .btn.btn-primary.dropdown-toggle, .navbar .navbar-nav > li > a.btn.btn-primary {
+	background: rgba(79, 117, 192, 1);
+}
+.btn.btn-primary:hover, 
+.btn.btn-primary:focus, 
+.btn.btn-primary:active, 
+.btn.btn-primary.active, 
+.btn.btn-primary:active:focus, 
+.btn.btn-primary:active:hover, 
+.btn.btn-primary.active:focus, 
+.btn.btn-primary.active:hover, 
+.open > .btn.btn-primary.dropdown-toggle:focus, 
+.open > .btn.btn-primary.dropdown-toggle:hover, 
+.navbar .navbar-nav > li > a.btn.btn-primary:hover, 
+.navbar .navbar-nav > li > a.btn.btn-primary:focus, 
+.navbar .navbar-nav > li > a.btn.btn-primary:active, 
+.navbar .navbar-nav > li > a.btn.btn-primary.active, 
+.navbar .navbar-nav > li > a.btn.btn-primary:active:focus, 
+.navbar .navbar-nav > li > a.btn.btn-primary:active:hover, 
+.navbar .navbar-nav > li > a.btn.btn-primary.active:focus, 
+.navbar .navbar-nav > li > a.btn.btn-primary.active:hover, 
+.open > .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:focus, 
+.open > .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle:hover {
+	background: rgba(130, 177, 255, 1);
+}
+
+.btn.btn-info, .navbar .navbar-nav > li > a.btn.btn-info, .open > .btn.btn-info.dropdown-toggle, .open > .navbar .navbar-nav > li > a.btn.btn-info.dropdown-toggle {
 	background: rgba(79, 117, 192, 1);
 }
 
-.btn.btn-info, .btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info:active, .btn.btn-info.active, .btn.btn-info:active:focus, .btn.btn-info:active:hover, .btn.btn-info.active:focus, .btn.btn-info.active:hover, .open > .btn.btn-info.dropdown-toggle, .open > .btn.btn-info.dropdown-toggle:focus, .open > .btn.btn-info.dropdown-toggle:hover, .navbar .navbar-nav > li > a.btn.btn-info, .navbar .navbar-nav > li > a.btn.btn-info:hover, .navbar .navbar-nav > li > a.btn.btn-info:focus, .navbar .navbar-nav > li > a.btn.btn-info:active, .navbar .navbar-nav > li > a.btn.btn-info.active, .navbar .navbar-nav > li > a.btn.btn-info:active:focus, .navbar .navbar-nav > li > a.btn.btn-info:active:hover, .navbar .navbar-nav > li > a.btn.btn-info.active:focus, .navbar .navbar-nav > li > a.btn.btn-info.active:hover, .open >
-.navbar .navbar-nav > li > a.btn.btn-info.dropdown-toggle, .open >
-.navbar .navbar-nav > li > a.btn.btn-info.dropdown-toggle:focus, .open >
-.navbar .navbar-nav > li > a.btn.btn-info.dropdown-toggle:hover {
-	background-color: rgba(79, 117, 192, 1);
+.btn.btn-info:hover, 
+.btn.btn-info:focus, 
+.btn.btn-info:active, 
+.btn.btn-info.active, 
+.btn.btn-info:active:focus, 
+.btn.btn-info:active:hover, 
+.btn.btn-info.active:focus, 
+.btn.btn-info.active:hover, 
+.open > .btn.btn-info.dropdown-toggle:focus, 
+.open > .btn.btn-info.dropdown-toggle:hover, 
+.navbar .navbar-nav > li > a.btn.btn-info:hover, 
+.navbar .navbar-nav > li > a.btn.btn-info:focus, 
+.navbar .navbar-nav > li > a.btn.btn-info:active, 
+.navbar .navbar-nav > li > a.btn.btn-info.active, 
+.navbar .navbar-nav > li > a.btn.btn-info:active:focus, 
+.navbar .navbar-nav > li > a.btn.btn-info:active:hover, 
+.navbar .navbar-nav > li > a.btn.btn-info.active:focus, 
+.navbar .navbar-nav > li > a.btn.btn-info.active:hover, 
+.open > .navbar .navbar-nav > li > a.btn.btn-info.dropdown-toggle:focus, 
+.open > .navbar .navbar-nav > li > a.btn.btn-info.dropdown-toggle:hover {
+	background: rgba(130, 177, 255, 1);
+}
+.btn.btn-info, .navbar .navbar-nav > li > a.btn.btn-info {
+	box-shadow: none;
 }
 
-.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
-	color: rgba(245, 182, 52, 1);
+.navbar .navbar-nav > .active > a, 
+.navbar .navbar-nav > .active > a:hover, 
+.navbar .navbar-nav > .active > a:focus,
+.navbar .navbar-nav > li > a:hover, 
+.navbar .navbar-nav > li > a:focus {
+	background-color: rgba(130, 177, 255, .3);
+	transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn.btn-primary, 
+.navbar .navbar-nav > li > a.btn.btn-primary {
+    box-shadow: none;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active, 
+.navbar .navbar-nav > li > a.btn.btn-primary:hover,
+.navbar .navbar-nav > li > a.btn.btn-primary:focus,
+.navbar .navbar-nav > li > a.btn.btn-primary:active {
+    box-shadow: 0 2px 2px 0 rgba(33, 66, 115, 0.34), 0 3px 1px -2px rgba(33, 66, 115, 0.42), 0 1px 5px 0 rgba(33, 66, 115, 0.3);
+}
+
+
+
+/*Drop Down Menus */
+.navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu li > a:focus, .navbar.navbar-default .dropdown-menu li > a:hover, .navbar.navbar-default .dropdown-menu li > a:focus {
+	background: rgba(79, 117, 192, 1);
+}
+
+
+/*Correcting the padding for the contact button in the navigation to be the same size as the other links */
+.navbar .navbar-nav > li > a.btn {
+    padding: 15px 30px;
+    margin: 0px;
 }
 
 /*Remove black border from headshot in the nav */
 .logo-container .logo {
 	border: 0px;
+}
+/*Remove black border from headshot in the nav */
+.logo-xs {
+	margin-left: 15px;
 }
 /* widen the subtitle for the website */
 .index-page .brand h3 {
