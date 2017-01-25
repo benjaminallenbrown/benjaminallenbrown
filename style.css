@@ -690,3 +690,8 @@ Light rgba(130, 177, 255, 1);
 body {
 	background-color: #FFFFFF;
 }
+
+/* Force header image to be full size on the homepage */
+.index-page .wrapper > .header {
+    height: 100vh;
+}
