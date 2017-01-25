@@ -152,6 +152,10 @@ Taken from Material Kit CSS Demo - Should debug this later
     height: 110px;
     display: block;
 }
+.space-10{
+    height: 30px;
+    display: block;
+}
 .space-30{
     height: 30px;
     display: block;
@@ -551,4 +555,7 @@ Taken from Material Kit CSS Demo - Should debug this later
 	font-size: 1.2em;
 	line-height: 1.4em;
 	color: #666666;
+}
+body {
+	background-color: #FFFFFF;
 }
