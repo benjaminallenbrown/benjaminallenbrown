@@ -33,20 +33,43 @@
 <body class="profile-page">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
-	<div class="container">
+    <div class="container">
         <div class="navbar-header">
-	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-	        	<span class="sr-only">Toggle navigation</span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	    	</button>
-	    	<a class="navbar-brand" href="#">Benjamin A. Brown</a>
-	    </div>
-	    <!-- From Old Source -->
-	    <div class="collapse navbar-collapse" id="navigation-index">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="active"><a href="Index.html">Home</a></li>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#">
+            <div class="logo-container hidden-xs scrolldisplay">
+                <div class="logo">
+                    <img src="bb-images/headshot-4.jpg" alt="Benjamin Brown" class="logo-image">
+                </div>
+                <div class="brand">
+                    Benjamin A. Brown
+                </div>
+            </div>
+            <div class="logo-container hidden-sm hidden-md hidden-lg hidden-xl">
+                <div class="logo logo-xs">
+                    <img src="bb-images/headshot-4.jpg" alt="Benjamin Brown" class="logo-image">
+                </div>
+                <div class="brand">
+                    Benjamin A. Brown
+                </div>
+            </div>
+            <div class="logo-container hidden-xs hidden-sm scrollhide">
+                <div class="brand">
+                    Benjamin A. Brown
+                </div>
+            </div>
+                
+            </a>
+        </div>
+        <!-- From Old Source -->
+        <div class="collapse navbar-collapse" id="navigation-index">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
             <!--<li><a href="#about">About</a></li>-->
             <li><a href="Work-Experience.html">Resume</a></li>
             <li class="dropdown">
@@ -61,7 +84,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphic Design <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Design <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Design Highlights</a></li>
                 <li role="separator" class="divider"></li>
@@ -83,41 +106,34 @@
                 <li><a href="#">Nature</a></li>
               </ul>
             </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">benjamin.allen.brown@gmail.com</a></li>
-                <li><a href="#">518-683-1602</a></li>
-              </ul>
+            <li class="hidden-sm hidden-md hidden-lg hidden-xl"><a href="#">Contact</a></li>
+            <li>
+                <a href="#" class="btn btn-info btn-md hidden-xs">
+                    Contact
+                </a>
             </li>
           </ul>
-            <!-- Hide Call Button
-          <ul class="nav navbar-nav navbar-right" id="BBFooter">
-          	<li class="active">
-            	<a href="#" class="btn btn-info btn-lg">
-          			<span class="glyphicon glyphicon-earphone"></span> (518) 683-1692
-        		</a>
-        	</li>
-          </ul>--><!--/.nav-collapse -->
         </div>
-	</div>
+    </div>
 </nav>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <div class="wrapper">
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START Leader Image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-	<div class="header" style="background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/b31dae42072737.57bf3577479b4.jpg');">
-		<div class="container">
+    <div class="header header-filter" style="background-image: url('bb-images/adk-panorama.jpg');">
+        <div class="space-110"></div>
+        <div class="container">
             <div class="row">
-                <div class="space-110">
-                </div>
-                <div class="col-md-6 col-md-offset-3">
-                    <h1 class="title text-center">Project Samples</h1>
+                <div class="col-sm-12 col-xs-12 col-md-8 col-md-offset-1 col-lg-8 col-lg-offset-1 col-xl-8 col-xl-offset-1">
+                    <div class="brand text-left lead-text">
+                        <h1>Projects</h1>
+                    </div>
                 </div>
             </div>
         </div>
-	</div>
-	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END Leader Image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="space-110"></div><div class="space-110"></div>
+            
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END Leader Image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 	<!-- you can use the class main-raised if you want the main area to be as a page with shadows -->
 	<div class="main">
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START PAGE CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -369,13 +385,6 @@
 
 
 
-
-
-
-
-
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START Fixed Footer  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <footer class="footer navbar-fixed-bottom" id="BBFooterNav">
   <div class="container" itemscope itemtype="http://schema.org/Person">
@@ -388,35 +397,35 @@
         </p></li>
       </ul>
       <ul class="nav navbar-nav navbar-right" id="BBFooter">
-        <li class="footerContactLinks"><p id="footerContactTextP"><a href="https://www.linkedin.com/in/benjaminallenbrown" target="_blank">LinkedIn</a></p></li>
-        <li class="footerContactLinks"><p id="footerContactTextP">
+        <li class="footerContactLinks"><a href="https://www.linkedin.com/in/benjaminallenbrown" target="_blank">LinkedIn</a></li>
+        <li class="footerContactLinks">
           <a href="tel:1-518-683-1602"  itemprop="telephone" >
             <span class="glyphicon glyphicon-earphone"></span> 518-683-1602
           </a>
-        </p></li>
+        </li>
         <li class="footerContactLinks">
-            <p id="footerContactTextP">
-                <a href="mailto:benjamin.allen.brown@gmail.com" target="_blank" itemprop="email">
+            <a href="mailto:benjamin.allen.brown@gmail.com" target="_blank" itemprop="email">
                     <span class="glyphicon glyphicon-envelope"></span> benjamin.allen.brown@gmail.com
                 </a>
-            </p>
           </li>
       </ul>
     </div>
-    <div id="navbar" class="hidden-lg hidden-md col-sm-12 col-xs-12">
+    <div id="navbar" class="hidden-lg hidden-md">
       <ul class="nav navbar-nav navbar-left" id="BBFooter">
-        <li class="footerContactLinks"><p id="footerContactTextP"><a href="https://www.linkedin.com/in/benjaminallenbrown" target="_blank">LinkedIn</a></p></li>
-        <li class="footerContactLinks"><p id="footerContactTextP">
+        <li class="footerContactLinks ">
+            <a href="https://www.linkedin.com/in/benjaminallenbrown" target="_blank">
+                LinkedIn
+            </a>
+        </li>
+        <li class="footerContactLinks ">
           <a href="tel:1-518-683-1602"  itemprop="telephone" >
             <span class="glyphicon glyphicon-earphone"></span> 518-683-1602
           </a>
-        </p></li>
+         </li>
         <li class="footerContactLinks">
-            <p id="footerContactTextP">
-                <a href="mailto:benjamin.allen.brown@gmail.com" target="_blank" itemprop="email">
+            <a href="mailto:benjamin.allen.brown@gmail.com" target="_blank" itemprop="email">
                     <span class="glyphicon glyphicon-envelope"></span> benjamin.allen.brown@gmail.com
                 </a>
-            </p>
           </li>
       </ul>
     </div><!--/.nav-collapse -->
