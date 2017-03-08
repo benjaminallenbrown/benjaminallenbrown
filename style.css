@@ -696,8 +696,6 @@ body {
 	font-weight: normal;
 	font-size: 1.7em;
 }
-/*increase font size for brand name */
-.index-page .brand h1 { font-size: 5.2em; }
 
 ./* widen the subtitle for the website */
 .index-page .brand h3 {
@@ -705,21 +703,19 @@ body {
 	font-weight: normal;
 	font-size: 1.7em;
 }
-/*increase font size for brand name */
-.index-page .brand h1 { font-size: 5.2em; }
 
 /*MOBILE FIRST SIZES */
 .index-page .lead-text {
 	margin-top: 15vh;
 }
 .index-page .brand h1 {
-		font-size: 4.5em;
+		font-size: 3em;
 	}
 .lead-text h2 {
-	font-size: 1.8em;
+	font-size: 1.4em;
 }
 .lead-text h3 {
-	font-size: 1.7em;
+	font-size: 1.4em;
 }
 @media (min-width: 768px) {
 	.index-page .lead-text {
@@ -732,7 +728,10 @@ body {
 		font-size: 2.2em;
 	}
 	.lead-text h3 {
-
+		font-size: 1.7em;
+	}
+	.index-page .brand h1 {
+		font-size: 4.5em; 
 	}
 
 }
