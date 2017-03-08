@@ -790,6 +790,10 @@ body {
 .lb-outerContainer {
 	background-color: #000000;
 }
+.lightboxOverlay {
+	background-color: #FFFFFF;
+}
 .lightbox .lb-image {
 	border: none;
+	border-radius: 10px;
 }
