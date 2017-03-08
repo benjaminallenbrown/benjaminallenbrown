@@ -779,3 +779,9 @@ body {
 	height: auto;
 	padding-bottom: 20px;
 }	
+.profile-page .gallery {
+	margin-top: 0px;
+}
+.profile-page .profile-tabs {
+	margin-top: 0px;
+}
