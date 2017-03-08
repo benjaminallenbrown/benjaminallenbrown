@@ -15,7 +15,10 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
-	<!-- CSS Files -->
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="lightbox/css/lightbox.css">
+
+    <!-- CSS Files -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-kit.css" rel="stylesheet"/>
 
@@ -220,12 +223,16 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/29c30342919105.57dc555304caf.jpg" class="img-rounded" />
-                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/fdb58a42919105.57dc5552e603d.jpg" class="img-rounded" />
+                                            <a href="https://mir-s3-cdn-cf.behance.net/project_modules/fs/29c30342919105.57dc555304caf.jpg" data-lightbox="wpi">
+                                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/29c30342919105.57dc555304caf.jpg" class="img-rounded"/>
+                                            </a>
+                                            <a href="https://mir-s3-cdn-cf.behance.net/project_modules/fs/fdb58a42919105.57dc5552e603d.jpg" data-lightbox="wpi">
+                                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/fdb58a42919105.57dc5552e603d.jpg" class="img-rounded" />
+                                            </a>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/8bfab242919105.57dc5552e5ac6.jpg" class="img-rounded" />
-                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2b3e8342919105.57dc5552d2da2.jpg" class="img-rounded" />
+                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/8bfab242919105.57dc5552e5ac6.jpg" class="img-rounded" data-lightbox="example-set"  />
+                                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2b3e8342919105.57dc5552d2da2.jpg" class="img-rounded" data-lightbox="example-set"  />
                                         </div>
                                     </div>
                                 </div>
@@ -451,6 +458,9 @@
 
 	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
 	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+    <!-- Lightbox -->
+    <script src="lightbox/js/lightbox.js"></script>
 
 	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
 	<script src="assets/js/material-kit.js" type="text/javascript"></script>
