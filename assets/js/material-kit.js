@@ -144,7 +144,7 @@ function debounce(func, wait, immediate) {
 	};
 };
 
-
+// Ben add header hide and display on scroll 
 (function ($) {
   $(document).ready(function(){
 

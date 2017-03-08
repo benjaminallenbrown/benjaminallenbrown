@@ -736,3 +736,78 @@ body {
 	}
 
 }
+
+/* Project Buttons */
+
+.project-img-button {
+	width: 80%;
+	display: none;
+}
+.project-li-button {
+}
+.project-a-button h5 {
+	margin-bottom: 5px;
+}
+.project-a-button:hover {
+	background-color: rgba(255,255,255,.9);
+	opacity: 1;
+}
+.nav-pills > li > a.project-a-button {
+	background-color: rgba(255,255,255,.1);
+	color: #FFFFFF;
+	margin: 0px 15px 15px 0px;
+}
+.nav-pills > li > a.project-a-button:hover {
+	background-color: rgba(255,255,255,.3);
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover, .nav-pills > li > a.project-a-button:active {
+    background-color: #9c27b0;
+    color: #FFFFFF;
+    box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+}
+@media (min-width: 650px) {
+	.project-img-button {
+		max-width: 100px;
+		max-height: 100px;
+		display: inline;
+	}
+	.project-li-button {
+		max-width: 140px;
+	}
+	.nav-pills > li > a.project-a-button {
+		margin: 0px 0px 0px 0px;
+	}
+}
+.profile-page .header {
+	height: auto;
+	padding-bottom: 20px;
+}	
+.profile-page .gallery {
+	margin-top: 0px;
+}
+.profile-page .profile-tabs {
+	margin-top: 0px;
+}
+
+/* lightbox Styling */
+.lb-outerContainer {
+	background-color: #000000;
+}
+.lightboxOverlay {
+	background-color: #FFFFFF;
+}
+.lightbox .lb-image {
+	border: none;
+	border-radius: 10px;
+}
+
+/*Contact Us Page*/
+a.contact-link {
+	color: #FFFFFF;
+	font-size: 1.8em;
+	text-decoration: none;
+}
+a.contact-link:hover, a.contact-link:active {
+	text-decoration: none;
+	color: #dbe3f2;
+}
