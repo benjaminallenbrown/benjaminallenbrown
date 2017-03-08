@@ -785,3 +785,11 @@ body {
 .profile-page .profile-tabs {
 	margin-top: 0px;
 }
+
+/* lightbox Styling */
+.lb-outerContainer {
+	background-color: #000000;
+}
+.lightbox .lb-image {
+	border: none;
+}
