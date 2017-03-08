@@ -745,6 +745,9 @@ body {
 }
 .project-li-button {
 }
+.project-a-button h5 {
+	margin-bottom: 5px;
+}
 .project-a-button:hover {
 	background-color: rgba(255,255,255,.9);
 	opacity: 1;
