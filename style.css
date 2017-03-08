@@ -712,10 +712,13 @@ body {
 		font-size: 3em;
 	}
 .lead-text h2 {
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 .lead-text h3 {
 	font-size: 1.4em;
+}
+.index-lead-h2 {
+	font-size: 1.8em; /*Opening text on index page*/
 }
 @media (min-width: 768px) {
 	.index-page .lead-text {
@@ -733,7 +736,17 @@ body {
 	.index-page .brand h1 {
 		font-size: 4.5em; 
 	}
+	.index-lead-h2 {
+		font-size: 2.6em;
+	}
 
+}
+
+/* Navbar on mobile */
+@media (max-width: 768px) {
+	.navbar.navbar-transparent {
+	    background-color: rgba(79, 117, 192, 1);
+	}
 }
 
 /* Project Buttons */
