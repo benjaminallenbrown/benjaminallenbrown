@@ -800,3 +800,14 @@ body {
 	border: none;
 	border-radius: 10px;
 }
+
+/*Contact Us Page*/
+a.contact-link {
+	color: #FFFFFF;
+	font-size: 1.8em;
+	text-decoration: none;
+}
+a.contact-link:hover, a.contact-link:active {
+	text-decoration: none;
+	color: #dbe3f2;
+}
