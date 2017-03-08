@@ -736,3 +736,16 @@ body {
 	}
 
 }
+
+/* Project Buttons */
+
+.project-img-button {
+	max-width: 100px;
+	max-height: 100px;
+}
+.project-li-button {
+	max-width: 140px;
+}
+.profile-page .header {
+	height: auto;
+}
