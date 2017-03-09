@@ -717,8 +717,13 @@ body {
 .lead-text h3 {
 	font-size: 1.4em;
 }
-.index-lead-h2 {
+.index-lead-h2, h2.page-header {
 	font-size: 1.8em; /*Opening text on index page*/
+	line-height: 1.3em;
+	margin: 15px 0px 10px 0px;
+}
+h5.project-subtitle {
+	font-size: 1.2em;
 }
 @media (min-width: 768px) {
 	.index-page .lead-text {
@@ -736,8 +741,12 @@ body {
 	.index-page .brand h1 {
 		font-size: 4.5em; 
 	}
-	.index-lead-h2 {
+	.index-lead-h2, h2.page-header {
 		font-size: 2.6em;
+		margin: 40px 0px 20px 0px;
+	}
+	h5.project-subtitle {
+		font-size: 1.25 em;
 	}
 
 }
@@ -832,7 +841,7 @@ Normal rgba(79, 117, 192, 1);
 Light rgba(130, 177, 255, 1);
 */
 .footer-mobilenav-projects {
-	
+
 }
 .footer-mobilenav-button {
 	vertical-align: middle;
