@@ -34,11 +34,11 @@ body > .container {
 .container .text-muted {
   margin: 20px 0;
 }
-
+@media (min-width: 650px) {
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
-}
+}}
 
 code {
   font-size: 80%;
@@ -841,7 +841,11 @@ Normal rgba(79, 117, 192, 1);
 Light rgba(130, 177, 255, 1);
 */
 .footer-mobilenav-projects {
-
+	margin: 0px;
+	padding: 0px;
+}
+#BBFooterNav {
+	box-shadow: 0 -10px 4px -12px rgba(0, 0, 0, 0.2), 0 -3px 10px 0px rgba(0, 0, 0, 0.12), 0 -8px 10px -8px rgba(0, 0, 0, 0.2);
 }
 .footer-mobilenav-button {
 	vertical-align: middle;
@@ -943,15 +947,15 @@ Light rgba(130, 177, 255, 1);
 	padding: 0px;
 }
 .contact-dropup > li > a {
-    margin-bottom: 10px;
+    margin: 0px 4px 10px 4px;
     border-radius: 200px;
     padding: 12px;
     background-color: rgba(79, 117, 192, 1);
     color: #FFFFFF;
-    font-size: 1.2em;
-    line-height: 1.2em;
-    width: 51px;
-    height: 51px;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    width: 52px;
+    height: 52px;
     text-align: center;
     display: flex;
     align-items: center;
