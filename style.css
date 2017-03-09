@@ -847,13 +847,33 @@ Light rgba(130, 177, 255, 1);
 	vertical-align: middle;
 	padding: 5px;
 	margin: 0px;
-	background: rgba(255,255,255,.4);
-	border-bottom: 2px solid transparent;
+	background: rgba(255,255,255,.1);
+	border: 2px solid transparent;
 	border-radius: 4px;
   	display: flex;
  	align-items: center;     /* Align the flex-items vertically */
   	justify-content: center; /* Optional, to align inner flex-items
                               horizontally within the column  */
+}
+
+.footer-mobilenav-a-contact {
+	text-decoration: none;
+	font-size: .8em;
+	line-height: 1.2em;
+	margin: 0px 1px 0px 1px;
+	padding: 5px;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	height: 100%;
+	color: #CCCCCC;
+  	display: flex;
+ 	align-items: center;     /* Align the flex-items vertically */
+  	justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+.footer-mobilenav-a-contact:hover, .footer-mobilenav-a-contact:focus, .footer-mobilenav-a-contact:active {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 .footer-mobilenav-a {
 	text-align: center;
@@ -863,19 +883,8 @@ Light rgba(130, 177, 255, 1);
 	padding: 5px;
 	border-radius: 0px;
 	color: #CCCCCC;
-	border-bottom: 2px solid transparent;
 	height: 100%;
-  	display: flex;
- 	align-items: center;     /* Align the flex-items vertically */
-  	justify-content: center; /* Optional, to align inner flex-items
-                              horizontally within the column  */
-}
-.footer-mobilenav-a-contact {
-	height: 100%;
-	font-size: .8em;
-	line-height: 1.2em;
-	margin: 0px 1px 0px 1px;
-	padding: 5px;
+	border-top: 2px solid transparent;
 	border-bottom: 2px solid transparent;
   	display: flex;
  	align-items: center;     /* Align the flex-items vertically */
