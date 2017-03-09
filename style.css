@@ -924,12 +924,19 @@ Light rgba(130, 177, 255, 1);
 }
 .contact-dropup > li > a {
     margin-bottom: 10px;
-    border-radius: 100px;
-    padding: 15px;
+    border-radius: 200px;
+    padding: 12px;
     background-color: rgba(79, 117, 192, 1);
     color: #FFFFFF;
     font-size: 1.2em;
-    line-height: 1em;
+    line-height: 1.2em;
+    width: 51px;
+    height: 51px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
 }
 
 
