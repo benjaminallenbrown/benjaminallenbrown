@@ -823,3 +823,125 @@ a.contact-link:hover, a.contact-link:active {
 	text-decoration: none;
 	color: #dbe3f2;
 }
+
+
+/**************************************** BB Footer Mobile Nav Start ***************************/
+/* Colors
+Dark rgba(36, 66, 115, 1);
+Normal rgba(79, 117, 192, 1);
+Light rgba(130, 177, 255, 1);
+*/
+.footer-mobilenav-button {
+	vertical-align: middle;
+	padding: 5px;
+	margin: 0px;
+	background: rgba(255,255,255,.4);
+	border-bottom: 2px solid transparent;
+	border-radius: 4px;
+  	display: flex;
+ 	align-items: center;     /* Align the flex-items vertically */
+  	justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+.footer-mobilenav-a {
+	text-align: center;
+	font-size: .8em;
+	line-height: 1.2em;
+	margin: 0px 1px 0px 1px;
+	padding: 5px;
+	border-radius: 0px;
+	color: #CCCCCC;
+	border-bottom: 2px solid transparent;
+	height: 100%;
+  	display: flex;
+ 	align-items: center;     /* Align the flex-items vertically */
+  	justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+.footer-mobilenav-a-contact {
+	height: 100%;
+	font-size: .8em;
+	line-height: 1.2em;
+	margin: 0px 1px 0px 1px;
+	padding: 5px;
+	border-bottom: 2px solid transparent;
+  	display: flex;
+ 	align-items: center;     /* Align the flex-items vertically */
+  	justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+.footer-mobilenav-a:hover, .footer-mobilenav-a:active, .footer-mobilenav-a:focus {
+	color: #FFFFFF;
+	text-decoration: none;
+	border-bottom: 2px solid #FFFFFF;
+}
+.footer-mobilenav {
+	vertical-align: middle;
+	padding: 0px;
+}
+.footer-mobilenav-section {
+	padding: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.footer-mobilenav-section > [class^="col-"],
+.footer-mobilenav-section > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Optional, to align inner items 
+                              horizontally inside the column */
+}
+/*
+.navbar-fixed-bottom {
+	padding: 0px 0px; 
+}
+
+ul#footerNavByBen {
+	vertical-align: middle;
+}
+
+ul#BBFooter li {
+	padding: 0px 0px;
+}
+li.footerContactTitle {
+}
+li p#footerContactTitleP {
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 10px;
+	margin: 0px;
+}
+li p#footerContactTextP {
+	font-weight: normal;
+	color: #FFFFFF;
+	padding: 10px;
+	margin: 0px;
+}
+li.footerContactLinks {
+	display: inline-block;
+}
+li.footerContactLinks a {
+	color: #FFFFFF;
+	padding: 10px 15px 10px 15px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+li.footerContactLinks a:hover, li.footerContactLinks a:focus, li.footerContactLinks a:active {
+	background-color: rgba(130, 177, 255, .3)
+}
+#BBHeaderNav {
+	background-color: rgba(79, 117, 192, 1);
+}
+#BBFooterNav {
+	margin: 0px;
+	background-color: rgba(79, 117, 192, 1);
+}
+#BBHeaderNav a {
+	color: #C4273C;
+}
+#BBHeaderNav a.navbar-brand {
+	color: #263545;
+}*/
+/**************************************** BB Footer Mobile Nav END ***************************/
