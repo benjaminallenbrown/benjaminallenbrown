@@ -904,6 +904,7 @@ Light rgba(130, 177, 255, 1);
 	vertical-align: middle;
 	padding: 0px;
 }
+/*Flex model to force footer into equal width & height */
 .footer-mobilenav-section {
 	padding: 0px;
   display: flex;
@@ -916,6 +917,7 @@ Light rgba(130, 177, 255, 1);
   justify-content: center; /* Optional, to align inner items 
                               horizontally inside the column */
 }
+/*Dropup contact menu */
 .contact-dropup {
 	background: transparent;
     border: none;
@@ -936,7 +938,7 @@ Light rgba(130, 177, 255, 1);
     transition:         transform 200ms ease, opacity 600ms ease;
 }
 
-.open > .contact-dropup {
+.open > .contact-dropup { /*animation for dropup menu*/
   pointer-events: auto;
   opacity: 1;
   -webkit-transform: scale(1, 1);
@@ -946,7 +948,7 @@ Light rgba(130, 177, 255, 1);
 	display: list-item;
 	padding: 0px;
 }
-.contact-dropup > li > a {
+.contact-dropup > li > a { /*circle buttons in contact dropup */
     margin: 0px 5px 10px 0px;
     border-radius: 200px;
     padding: 12px;
@@ -965,13 +967,6 @@ Light rgba(130, 177, 255, 1);
     0 2px 7px 2px rgba(0, 0, 0, 0.12), 0 3px 3px -3px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-menu.animated {
-  /* Speed up animations */
-  -webkit-animation-duration: 0.55s;
-  animation-duration: 0.55s;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
-}
 /*
 .navbar-fixed-bottom {
 	padding: 0px 0px; 
