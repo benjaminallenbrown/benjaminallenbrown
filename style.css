@@ -758,6 +758,8 @@ h5.project-subtitle {
 	}
 }
 
+
+
 /* Project Buttons */
 
 .project-img-button {
@@ -814,17 +816,17 @@ h5.project-subtitle {
   flex-direction: row;
 }
 .nav-pills > li {
-  display: flex;/*  align-items: center;*/
-  justify-content: center; /* Optional, to align inner items 
-                              horizontally inside the column */
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 650px) {
-.nav-pills > li > a.project-a-button {
-    margin: 0px 0px 0px 4px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+	.nav-pills > li > a.project-a-button {
+	    margin: 0px 0px 0px 4px;
+	    align-items: center;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+	}
 }
 
 /* lightbox Styling */
