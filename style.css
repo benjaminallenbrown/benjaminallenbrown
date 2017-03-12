@@ -795,9 +795,6 @@ h5.project-subtitle {
 	.project-li-button {
 		max-width: 140px;
 	}
-	.nav-pills > li > a.project-a-button {
-		margin: 0px 0px 0px 0px;
-	}
 }
 .profile-page .header {
 	height: auto;
@@ -808,6 +805,26 @@ h5.project-subtitle {
 }
 .profile-page .profile-tabs {
 	margin-top: 0px;
+}
+
+/*Flex box on project buttons at the top of the page to force equal height */
+
+.nav-pills {
+  display: inline-flex !important;
+  flex-direction: row;
+}
+.nav-pills > li {
+  display: flex;/*  align-items: center;*/
+  justify-content: center; /* Optional, to align inner items 
+                              horizontally inside the column */
+}
+@media (min-width: 650px) {
+.nav-pills > li > a.project-a-button {
+    margin: 0px 0px 0px 4px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /* lightbox Styling */
