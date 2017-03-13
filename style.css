@@ -34,11 +34,11 @@ body > .container {
 .container .text-muted {
   margin: 20px 0;
 }
-
+@media (min-width: 650px) {
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
-}
+}}
 
 code {
   font-size: 80%;
@@ -609,7 +609,9 @@ Light rgba(130, 177, 255, 1);
 .btn.btn-info, .navbar .navbar-nav > li > a.btn.btn-info {
 	box-shadow: none;
 }
-
+.index-page .btn.btn-info, .navbar .navbar-nav > li > a.btn.btn-info.contact-btn { /*Contact button on home page */
+	background: rgba(79, 117, 192, 1);
+}
 .navbar .navbar-nav > .active > a, 
 .navbar .navbar-nav > .active > a:hover, 
 .navbar .navbar-nav > .active > a:focus,
@@ -717,8 +719,13 @@ body {
 .lead-text h3 {
 	font-size: 1.4em;
 }
-.index-lead-h2 {
+.index-lead-h2, h2.page-header {
 	font-size: 1.8em; /*Opening text on index page*/
+	line-height: 1.3em;
+	margin: 15px 0px 10px 0px;
+}
+h5.project-subtitle {
+	font-size: 1.2em;
 }
 @media (min-width: 768px) {
 	.index-page .lead-text {
@@ -736,18 +743,50 @@ body {
 	.index-page .brand h1 {
 		font-size: 4.5em; 
 	}
-	.index-lead-h2 {
+	.index-lead-h2, h2.page-header {
 		font-size: 2.6em;
+		margin: 40px 0px 20px 0px;
+	}
+	h5.project-subtitle {
+		font-size: 1.25 em;
 	}
 
 }
 
-/* Navbar on mobile */
+/* Navbar transpraency and color on mobile 4f75c0 = 79,117,192 > 3f5d99 is darker*/
+
 @media (max-width: 768px) {
 	.navbar.navbar-transparent {
-	    background-color: rgba(79, 117, 192, 1);
+	    background-color: #3f5d99;
+	}
+	.index-page .navbar.navbar-transparent {
+	    background-color: #4f75c0;
+	}
+	.navbar-collapse {
+		text-align: center;
+		/*background-color: #3f5d99;*/
+	}
+	.navbar-collapse > ul > li {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.navbar-collapse > ul > li > a {
+		font-size: 16px !important;
+		letter-spacing: 1px;
 	}
 }
+@media (min-width: 769px) {
+	.navbar.navbar-transparent {
+	    background-color: #3f5d99;
+	}
+	.index-page .navbar.navbar-transparent {
+	    background-color: rgba(0,0,0,.2);
+	}
+}
+
+
 
 /* Project Buttons */
 
@@ -786,9 +825,6 @@ body {
 	.project-li-button {
 		max-width: 140px;
 	}
-	.nav-pills > li > a.project-a-button {
-		margin: 0px 0px 0px 0px;
-	}
 }
 .profile-page .header {
 	height: auto;
@@ -799,6 +835,28 @@ body {
 }
 .profile-page .profile-tabs {
 	margin-top: 0px;
+}
+
+
+
+/*Flex box on project buttons at the top of the page to force equal height */
+
+.nav-pills {
+  display: inline-flex !important;
+  flex-direction: row;
+}
+.nav-pills > li {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 650px) {
+	.nav-pills > li > a.project-a-button {
+	    margin: 0px 0px 0px 4px;
+	    align-items: center;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-around;
+	}
 }
 
 /* lightbox Styling */
@@ -823,3 +881,193 @@ a.contact-link:hover, a.contact-link:active {
 	text-decoration: none;
 	color: #dbe3f2;
 }
+
+
+
+/**************************************** BB Footer Mobile Nav Start ***************************/
+/* Colors
+Dark rgba(36, 66, 115, 1);
+Normal rgba(79, 117, 192, 1);
+Light rgba(130, 177, 255, 1);
+*/
+.footer-mobilenav-projects {
+	margin: 0px;
+	padding: 0px;
+}
+#BBFooterNav {
+	box-shadow: 0 -10px 4px -12px rgba(0, 0, 0, 0.2), 0 -3px 10px 0px rgba(0, 0, 0, 0.12), 0 -8px 10px -8px rgba(0, 0, 0, 0.2);
+}
+.footer-mobilenav-button {
+	vertical-align: middle;
+	padding: 5px;
+	margin: 0px;
+	background: rgba(255,255,255,.1);
+	border-radius: 4px;
+	border-bottom: transparent;
+  	display: flex;
+ 	align-items: center;     /* Align the flex-items vertically */
+  	justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+
+.footer-mobilenav-a-contact {
+	text-decoration: none;
+	font-size: .9em;
+	line-height: 1.1em;
+	margin: 0px 1px 0px 1px;
+	padding: 5px;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	height: 100%;
+	color: #CCCCCC;
+  	display: flex;
+ 	align-items: center;     /* Align the flex-items vertically */
+  	justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+.footer-mobilenav-a-contact:hover, .footer-mobilenav-a-contact:focus, .footer-mobilenav-a-contact:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.footer-mobilenav-a {
+	text-align: center;
+	font-size: .9em;
+	line-height: 1.2em;
+	margin: 0px 1px 0px 1px;
+	padding: 5px;
+	border-radius: 0px;
+	color: #CCCCCC;
+	height: 100%;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+  	display: flex;
+ 	align-items: center;     /* Align the flex-items vertically */
+  	justify-content: center; /* Optional, to align inner flex-items
+                              horizontally within the column  */
+}
+.footer-mobilenav-a:hover, .footer-mobilenav-a:active, .footer-mobilenav-a:focus, .give-focus{
+	color: #FFFFFF;
+	text-decoration: none;
+	border-bottom: 2px solid #FFFFFF;
+}
+.footer-mobilenav {
+	vertical-align: middle;
+	padding: 0px;
+}
+/*Flex model to force footer into equal width & height */
+.footer-mobilenav-section {
+	padding: 0px;
+  display: flex;
+  flex-direction: row;
+}
+.footer-mobilenav-section > [class^="col-"],
+.footer-mobilenav-section > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Optional, to align inner items 
+                              horizontally inside the column */
+}
+/*Dropup contact menu */
+.contact-dropup {
+	background: transparent;
+    border: none;
+    box-shadow: none;
+    min-width: 10px;
+  	opacity:.1;
+  	-webkit-transform-origin: bottom;
+  	transform-origin: bottom;
+  	-webkit-animation-fill-mode: forwards;  
+  	animation-fill-mode: forwards; 
+  	-webkit-transform: scale(1, 0);
+  	display: block; 
+  	pointer-events: none;
+    -webkit-transition: transform 200ms ease, opacity 600ms ease;
+    -o-transition:      transform 200ms ease, opacity 600ms ease;
+    -moz-transition:    transform 200ms ease, opacity 600ms ease;
+    -ms-transition:     transform 200ms ease, opacity 600ms ease;
+    transition:         transform 200ms ease, opacity 600ms ease;
+}
+
+.open > .contact-dropup { /*animation for dropup menu*/
+  pointer-events: auto;
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1); 
+}
+.contact-dropup > li {
+	display: list-item;
+	padding: 0px;
+}
+.contact-dropup > li > a { /*circle buttons in contact dropup */
+    margin: 0px 5px 10px 0px;
+    border-radius: 200px;
+    padding: 12px;
+    background-color: rgba(79, 117, 192, 1);
+    color: #FFFFFF;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    width: 52px;
+    height: 52px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: lowercase;
+    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.14), 
+    0 2px 7px 2px rgba(0, 0, 0, 0.12), 0 3px 3px -3px rgba(0, 0, 0, 0.2);
+}
+
+/*
+.navbar-fixed-bottom {
+	padding: 0px 0px; 
+}
+
+ul#footerNavByBen {
+	vertical-align: middle;
+}
+
+ul#BBFooter li {
+	padding: 0px 0px;
+}
+li.footerContactTitle {
+}
+li p#footerContactTitleP {
+	font-weight: bold;
+	color: #FFFFFF;
+	padding: 10px;
+	margin: 0px;
+}
+li p#footerContactTextP {
+	font-weight: normal;
+	color: #FFFFFF;
+	padding: 10px;
+	margin: 0px;
+}
+li.footerContactLinks {
+	display: inline-block;
+}
+li.footerContactLinks a {
+	color: #FFFFFF;
+	padding: 10px 15px 10px 15px;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+li.footerContactLinks a:hover, li.footerContactLinks a:focus, li.footerContactLinks a:active {
+	background-color: rgba(130, 177, 255, .3)
+}
+#BBHeaderNav {
+	background-color: rgba(79, 117, 192, 1);
+}
+#BBFooterNav {
+	margin: 0px;
+	background-color: rgba(79, 117, 192, 1);
+}
+#BBHeaderNav a {
+	color: #C4273C;
+}
+#BBHeaderNav a.navbar-brand {
+	color: #263545;
+}*/
+/**************************************** BB Footer Mobile Nav END ***************************/
