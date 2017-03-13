@@ -609,7 +609,9 @@ Light rgba(130, 177, 255, 1);
 .btn.btn-info, .navbar .navbar-nav > li > a.btn.btn-info {
 	box-shadow: none;
 }
-
+.index-page .btn.btn-info, .navbar .navbar-nav > li > a.btn.btn-info.contact-btn { /*Contact button on home page */
+	background: rgba(79, 117, 192, 1);
+}
 .navbar .navbar-nav > .active > a, 
 .navbar .navbar-nav > .active > a:hover, 
 .navbar .navbar-nav > .active > a:focus,
@@ -879,6 +881,7 @@ a.contact-link:hover, a.contact-link:active {
 	text-decoration: none;
 	color: #dbe3f2;
 }
+
 
 
 /**************************************** BB Footer Mobile Nav Start ***************************/
