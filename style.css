@@ -751,10 +751,36 @@ h5.project-subtitle {
 
 }
 
-/* Navbar on mobile */
+/* Navbar transpraency and color on mobile 4f75c0 = 79,117,192 > 3f5d99 is darker*/
+
 @media (max-width: 768px) {
 	.navbar.navbar-transparent {
-	    background-color: rgba(79, 117, 192, 1);
+	    background-color: #3f5d99;
+	}
+	.index-page .navbar.navbar-transparent {
+	    background-color: #3f5d99;
+	}
+	.navbar-collapse {
+		text-align: center;
+		/*background-color: #3f5d99;*/
+	}
+	.navbar-collapse > ul > li {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.navbar-collapse > ul > li > a {
+		font-size: 16px !important;
+		letter-spacing: 1px;
+	}
+}
+@media (min-width: 769px) {
+	.navbar.navbar-transparent {
+	    background-color: #3f5d99;
+	}
+	.index-page .navbar.navbar-transparent {
+	    background-color: rgba(0,0,0,.2);
 	}
 }
 
@@ -808,6 +834,8 @@ h5.project-subtitle {
 .profile-page .profile-tabs {
 	margin-top: 0px;
 }
+
+
 
 /*Flex box on project buttons at the top of the page to force equal height */
 
