@@ -887,7 +887,7 @@ a.contact-link:hover, a.contact-link:active {
 .photography-page .gallery img {
 	margin-bottom: 10px;
 }
-.photography-page .col-xs-6, .photography-page .col-xs-5, .photography-page .col-xs-7, .photography-page .col-xs-12, .photography-page .col-xs-4 {
+.photography-page .col-xs-6, .photography-page .col-xs-3, .photography-page .col-xs-5, .photography-page .col-xs-7, .photography-page .col-xs-12, .photography-page .col-xs-4 {
 	padding: 0px 5px 0px 5px;
 }
 /**************************************** BB Footer Mobile Nav Start ***************************/
